@@ -17,19 +17,19 @@ public class AdvancedAstrology {
     }
 
     public static void printTriangle(int size) {
-        for (int i = 0; i< size; i++){
+        for (int i = 0; i < size; i++){
             printSpaces(size -i -1);
             printStars(i + 1);
         }
     }
 
     public static void christmasTree(int height) {
-        for(int i = 0; i< height; i++){
+        for(int i = 0; i < height; i++){
             printSpaces(height -i -1);
             printStars(2 * i + 1);
         }
 
-        for (int i= 0; i< 2; i++){
+        for (int i= 0; i < 2; i++){
             printSpaces(height -2);
             printStars(3);
         }
