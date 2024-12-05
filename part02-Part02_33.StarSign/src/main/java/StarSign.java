@@ -11,6 +11,7 @@ public class StarSign {
         printStars(5);
         printStars(3);
         printStars(9);
+        System.out.println("\n---");
         printSquare(4);
         System.out.println("\n---");
         printRectangle(5, 6);
@@ -29,14 +30,20 @@ public class StarSign {
     }
 
     public static void printSquare(int size) {
-        // second part of the exercise
+        for (int i = 0; i < size; i++) {
+            System.out.println("*".repeat(size));
+        }
     }
 
-    public static void printRectangle(int width, int height) {
-        // third part of the exercise
+public static void printRectangle(int width, int height) {
+    for (int i = 0; i < height; i++) {
+        System.out.println("*".repeat(width));
     }
+}
 
-    public static void printTriangle(int size) {
-        // fourth part of the exercise
+public static void printTriangle(int size) {
+    for (int i = 1; i <= size; i++) {
+        System.out.println("*".repeat(i));
     }
+}
 }
