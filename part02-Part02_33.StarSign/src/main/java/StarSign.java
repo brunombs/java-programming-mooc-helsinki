@@ -8,10 +8,8 @@ public class StarSign {
         //NB: If the tests don't seem to pass, you should try the methods here
         //in the main to make sure they print the correct shapes!
         
-        printStars(5);
         printStars(3);
-        printStars(9);
-        System.out.println("\n---");
+        System.out.println("\n---");  // printing --- between the shapes
         printSquare(4);
         System.out.println("\n---");
         printRectangle(5, 6);
@@ -21,29 +19,27 @@ public class StarSign {
     }
 
     public static void printStars(int number) {
-        while(number > 0){
+        for (int i = 0; i < number; i++) {
             System.out.print("*");
-            number -= 1;
         }
-
-        System.out.println("");
+        System.out.println();
     }
 
     public static void printSquare(int size) {
         for (int i = 0; i < size; i++) {
-            System.out.println("*".repeat(size));
+            printStars(size);
         }
     }
 
-public static void printRectangle(int width, int height) {
-    for (int i = 0; i < height; i++) {
-        System.out.println("*".repeat(width));
+    public static void printRectangle(int width, int height) {
+        for (int i = 0; i < height; i++) {
+            printStars(width);
+        }
     }
-}
 
-public static void printTriangle(int size) {
-    for (int i = 1; i <= size; i++) {
-        System.out.println("*".repeat(i));
+    public static void printTriangle(int size) {
+        for (int i = 1; i <= size; i++) {
+            printStars(i);
+        }
     }
-}
 }
