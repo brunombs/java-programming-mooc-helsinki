@@ -18,7 +18,11 @@ public class SumOfAList {
         }
 
         System.out.println("");
+        int sum = 0;
+        for (Integer number : list){
+            sum += number;
+        }
 
-        // toteuta listan lukujen summan laskeminen tänne
+        System.out.println("Sum: " + sum);
     }
 }
