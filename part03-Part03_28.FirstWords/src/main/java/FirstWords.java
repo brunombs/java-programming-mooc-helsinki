@@ -8,7 +8,7 @@ public class FirstWords {
 
         while (true){
             String input = scanner.nextLine();
-            String text[] = input.split(" ");
+            String[] text = input.split(" ");
             System.out.println(text[0]);
             if (input.equals("")){
                 break;
