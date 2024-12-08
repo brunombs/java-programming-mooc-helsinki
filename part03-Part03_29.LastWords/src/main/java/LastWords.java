@@ -8,13 +8,13 @@ public class LastWords {
 
         while(true){
             String input = scanner.nextLine();
-            String[] text = input.split("");
-            System.out.println(text[0]);
+            String[] text = input.split(" ");
+
+            System.out.println(text[text.length -1]);
+
             if (input.equals("")){
                 break;
             }
-
-            input = scanner.nextLine();
         }
     }
 }
