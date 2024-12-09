@@ -13,8 +13,9 @@ public class DecreasingCounter {
     }
 
     public void decrement() {
-        this.value = value -1;
-        // the aim is to decrement the value of the counter by one
+        if (value > 0){
+            this.value = value -1;
+        }
     }
 
     // the other methods go here
