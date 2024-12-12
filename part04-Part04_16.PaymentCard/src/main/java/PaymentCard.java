@@ -22,4 +22,11 @@ public class PaymentCard {
         }
     }
 
+    public void addMoney(double amount){
+        this.balance += amount;
+        if (this.balance >= 150){
+            this.balance = 150;
+        }
+    }
+
 }
