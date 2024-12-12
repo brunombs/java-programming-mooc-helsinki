@@ -7,5 +7,12 @@ public class MainProgram {
         PaymentCard paymentCard = new PaymentCard(50);
         System.out.println(paymentCard);
 
+        paymentCard.eatAffordably();
+        System.out.println(paymentCard);
+
+        paymentCard.eatHeartily();
+        paymentCard.eatAffordably();;
+        System.out.println(paymentCard);
+
     }
 }

@@ -9,4 +9,12 @@ public class PaymentCard {
         return "The card has a balance of " + balance + " euros";
     }
 
+    public void eatAffordably(){
+        this.balance -= 2.60;
+    }
+
+    public void eatHeartily(){
+        this.balance -= 4.60;
+    }
+
 }
