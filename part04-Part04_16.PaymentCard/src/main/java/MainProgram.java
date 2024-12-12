@@ -5,18 +5,9 @@ public class MainProgram {
         // Scanner scanner = new Scanner(System.in);
         
         PaymentCard paymentCard = new PaymentCard(10);
-        System.out.println(paymentCard);
-
-        paymentCard.addMoney(15);
-        System.out.println(paymentCard);
-
-        paymentCard.addMoney(10);
-        System.out.println(paymentCard);
-
-        paymentCard.addMoney(200);
-        System.out.println(paymentCard);
-
-        
+        System.out.println("Paul: " + paymentCard);
+        paymentCard.addMoney(-15);
+        System.out.println("Paul: " + paymentCard);
 
     }
 }
