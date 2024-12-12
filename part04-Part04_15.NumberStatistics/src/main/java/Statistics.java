@@ -1,11 +1,11 @@
 
 public class Statistics {
-    private int count;
-    private int sum;
+    private int count = 0;
+    private int sum = 0;
 
     public Statistics(){
-        this.count = count;
-        this.sum = sum;
+        int count;
+        int sum;
     }
 
     public int getCount(){
