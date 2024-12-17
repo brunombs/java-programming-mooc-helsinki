@@ -20,4 +20,12 @@ public class Counter {
     public void decrease(){
         this.startValue--;
     }
+
+    public void increase(int increaseBy){
+        this.startValue += increaseBy;
+    }
+
+    public void decrease(int decreaseBy){
+        this.startValue -= decreaseBy;
+    }
 }

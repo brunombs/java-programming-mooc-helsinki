@@ -10,13 +10,21 @@ public class MainProgram {
         System.out.println(counter.value());
         counter.decrease();
         System.out.println(counter.value());
+        counter.increase(10);
+        System.out.println(counter.value());
+        counter.decrease(5);
+        System.out.println(counter.value());
 
         System.out.println("---------------");
-        
+
         System.out.println(counterTwo.value());
         counterTwo.increase();
         System.out.println(counterTwo.value());
         counterTwo.decrease();
+        System.out.println(counterTwo.value());
+        counterTwo.increase(7);
+        System.out.println(counterTwo.value());
+        counterTwo.decrease(5);
         System.out.println(counterTwo.value());
     }
 }
