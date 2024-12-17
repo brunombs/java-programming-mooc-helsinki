@@ -22,10 +22,14 @@ public class Counter {
     }
 
     public void increase(int increaseBy){
-        this.startValue += increaseBy;
+        if (increaseBy > 0){
+            this.startValue += increaseBy;
+        }
     }
 
     public void decrease(int decreaseBy){
-        this.startValue -= decreaseBy;
+        if (decreaseBy > 0){
+            this.startValue -= decreaseBy;
+        }
     }
 }
