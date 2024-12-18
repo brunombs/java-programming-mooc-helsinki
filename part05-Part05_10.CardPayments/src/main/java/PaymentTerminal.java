@@ -28,6 +28,24 @@ public class PaymentTerminal {
         }
         return payment;
     }
+    
+    public boolean eatAffordably(PaymentCard card){
+        if (card.balance() >= 2.50){
+            card.decreaseMoney(2.50);
+            affordableMeals++;
+            return true;
+        }
+        return false;
+    }
+
+    public boolean eatHeartily(PaymentCard card){
+        if (card.balance() >= 4.30){
+            card.decreaseMoney(4.30);
+            heartyMeals++;
+            return true;
+        }
+        return false;
+    }
 
 
     @Override
